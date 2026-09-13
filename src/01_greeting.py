@@ -1,0 +1,5 @@
+print('имя:', end = ' ')
+name = input()
+print('возраст:', end = ' ')
+age = int(input())
+print(f'Привет, {name}! Через год тебе будет {age + 1}.')
