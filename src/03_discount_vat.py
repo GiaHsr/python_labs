@@ -1,4 +1,4 @@
-price, discount, vat = map(int, input().split())
+price, discount, vat = map(float, input().split())
 
 base = price * (1 - discount/100)
 vat_amount = base * (vat/100)
