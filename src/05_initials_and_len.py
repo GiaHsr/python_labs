@@ -1,5 +1,9 @@
-f = input('ФИО: ')
-f = f.split()
+n = int(input())
+o = 0
+z = 0
+for i in range(n):
+    s = input().split()
+    if s[-1] == 'True': o += 1
+    else: z += 1
 
-print('Инициалы:', f[0][0] + f[1][0] + f[2][0] + '.')
-print('Длина (символов):', len(f[0]) + len(f[1]) + len(f[2]) + 2)
+print(o, z)
