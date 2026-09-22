@@ -1,4 +1,8 @@
-price, discount, vat = map(float, input().split())
+# price, discount, vat = map(float, input().split())
+price = int(input('pric = '))
+discount = int(input('discount = '))
+vat = int(input('vat = '))
+
 
 base = price * (1 - discount/100)
 vat_amount = base * (vat/100)
