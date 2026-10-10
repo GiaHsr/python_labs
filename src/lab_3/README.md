@@ -1,6 +1,19 @@
 # Задание A — src/lib/text.py
 ## 1. normalize
-![](../../images/lab_3/code_1.png)
+```
+def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+    if casefold:
+        text = text.casefold()
+    else:
+        text = text.lower()
+
+    if yo2e:
+        text = text.replace("ё", "е").replace("Ё", "Е")
+
+    text = text.split()
+    return " ".join(text)
+
+```
 > нормализует текст
 
 ## 2. tokenize
@@ -15,3 +28,6 @@
 > составляет топ_n по частоте
 ### вывод
 ![](../../images/lab_3/task_1.png)
+
+# Задание B — src/text_stats.py
+![](../../images/lab_3/code_task_B.png)
