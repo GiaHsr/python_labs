@@ -91,7 +91,7 @@ print()
 ```
 ### пример вывода 
 ```bash
-echo 'Привет, мир!' | python3 -m src.lab_3.text_stats
+echo 'Привет, мир! Привет!!!' | python3 -m src.lab_3.text_stats
 ```
 ![](../../images/lab_3/task_2.png)
 > работа text_stats.py
