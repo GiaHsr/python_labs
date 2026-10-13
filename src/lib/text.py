@@ -67,8 +67,8 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
 
     ''' Выводит top n слов по частоте обращения
         
-            Returns:
-                Словарь где указаны слова и количество их повторений
+        Returns:
+            Словарь где указаны слова и количество их повторений
     '''
 
     ans = list(freq.items())
