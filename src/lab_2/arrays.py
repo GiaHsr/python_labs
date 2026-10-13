@@ -1,4 +1,13 @@
 def min_max(nums):
+
+    ''' Вычисляет максимум и минимум списка
+
+        Returns:
+            Кортеж (минимум, максимум)
+
+        ValueError: Если список пустой
+    '''
+
     if len(nums) == 0:
         return "ValueError"
     ma = nums[0]
@@ -9,6 +18,13 @@ def min_max(nums):
     return (mi, ma)
 
 def unique_sorted(nums):
+
+    ''' Возвращает отсортированный список
+
+        Returns:
+            Отсортированный список
+    '''
+
     nums = list(set(nums))
     if len(nums) <= 1:
         return nums
@@ -29,6 +45,15 @@ def unique_sorted(nums):
     return unique_sorted(m) + pp + unique_sorted(b)
 
 def flatten(mat):
+
+    ''' Переводит матрицу в вектор
+    
+        Returns:
+            vector: Список
+            
+        TypeError: Если передана не матрица
+    '''
+
     ans = []
     for i in mat:
         if isinstance(i, list) or isinstance(i, tuple):

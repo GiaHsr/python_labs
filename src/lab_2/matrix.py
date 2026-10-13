@@ -1,4 +1,13 @@
 def transpose(mat):
+
+    ''' Меняет строки и столбцы местами
+
+        Returns:
+            trans: Транспонированная матрица
+
+        ValueError: Строки разной длины
+    '''
+
     if len(mat) == 0:
         return mat
 
@@ -14,6 +23,15 @@ def transpose(mat):
     return ans
 
 def row_sums(mat):
+
+    ''' Сумма по каждой строке
+
+        Returns:
+            Список сумм по строке
+
+        ValueError: Строки разной длины
+    '''
+
     l = len(mat[0])
     ans = []
     for i in mat:
@@ -25,6 +43,15 @@ def row_sums(mat):
 
 
 def col_sums(mat):
+
+    ''' Сумма по каждому столбцу
+
+        Returns:
+            Список сумм по столбцам
+
+        ValueError: Строки разной длины
+    '''
+
     l = len(max(mat, key=len))
     ans = []
     for i in range(l): 
