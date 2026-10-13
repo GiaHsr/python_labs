@@ -94,6 +94,7 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
 > составляет топ_n по частоте
 ### вывод
 ![](../../images/lab_3/task_1.png)
+
 > работа функций
 
 # Задание B — src/text_stats.py
@@ -129,4 +130,5 @@ print()
 echo 'Привет, мир! Привет!!!' | python3 -m src.lab_3.text_stats
 ```
 ![](../../images/lab_3/task_2.png)
+
 > работа text_stats.py
