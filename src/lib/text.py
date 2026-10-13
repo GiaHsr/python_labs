@@ -1,5 +1,18 @@
 
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
+
+    ''' Нормализует текст
+
+        casefold:
+            True: Переводит все буквы в строчные
+
+        yo2e: 
+            Заменяет ё/Ё на е/Е
+
+        Returns:
+            Итоговый обработанный текст
+    '''
+
     if casefold:
         text = text.casefold()
     else:
@@ -13,6 +26,13 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
 
 
 def tokenize(text: str) -> list[str]:
+
+    ''' Разбивает на слова
+    
+        Returns:
+            Массив слов
+    '''
+
     ans = []
     word = ""
     for i in range(len(text)):
@@ -27,6 +47,13 @@ def tokenize(text: str) -> list[str]:
     return ans
 
 def count_freq(tokens: list[str]) -> dict[str, int]:
+
+    ''' Считает количество повторений токенов
+    
+        Returns:
+            Словарь [слово], [количество повторений]
+    '''
+
     ans = {}
     for i in tokens:
         if i in ans:
@@ -37,6 +64,13 @@ def count_freq(tokens: list[str]) -> dict[str, int]:
     return ans
 
 def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
+
+    ''' Выводит top n слов по частоте обращения
+        
+            Returns:
+                Словарь где указаны слова и количество их повторений
+    '''
+
     ans = list(freq.items())
  
     ans = sorted(ans, key=lambda x: (-x[1], x[0]))
