@@ -45,7 +45,7 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
             w.writerow(i)
 ```
 
-## mini-test:
+### mini-test:
 ```
 txt = read_text("data/input.txt")
 write_csv([("word","count"),("test",3)], "data/check.csv")
@@ -90,25 +90,25 @@ if norm:
     print()
 ```
 # Тест-кейсы
-## A Один файл
-Вход (data/lab04/input.txt):
+## A. Один файл
+### Вход (data/lab04/input.txt):
 ```
 Привет, мир! Привет!!! Привееееееееет!! Как дела?
 ```
-Вывод в консоль:<br>
-![](../../images/lab_4/test_A_console.png)<br>
-Вывод в report.csv:<br>
-![](../../images/lab_4/test_A_csv.png)<br>
+### Вывод в консоль:
+![](../../images/lab_4/test_A_console.png)
+### Вывод в report.csv:
+![](../../images/lab_4/test_A_csv.png)
 
 ## B Пустой файл
 ![](../../images/lab_4/test_B_csv.png)
 ## C Кодировка cp1251
-Ввод: 
+### Ввод: 
 ```
 python3 -m src.lab_4.text_report --in data/lab04/input_cp1251.txt --encoding cp1251 --out data/lab04/report_cp1251.csv
 ```
-Вывод в консоль:<br>
-![](../../images/lab_4/test_C_console.png)<br>
+### Вывод в консоль:
+![](../../images/lab_4/test_C_console.png)
 
-Вывод в report.csv:<br>
-![](../../images/lab_4/test_C_csv.png)<br>
+### Вывод в report.csv:
+![](../../images/lab_4/test_C_csv.png)
