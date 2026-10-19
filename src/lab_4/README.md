@@ -95,10 +95,10 @@ if norm:
 ```
 Привет, мир! Привет!!! Привееееееееет!! Как дела?
 ```
-**Вывод в консоль:**
-![](../../images/lab_4/test_A_console.png)
-**Вывод в report.csv:**
-![](../../images/lab_4/test_A_csv.png)
+**Вывод в консоль:**<br>
+![](../../images/lab_4/test_A_console.png)<br>
+**Вывод в report.csv:**<br>
+![](../../images/lab_4/test_A_csv.png)<br>
 
 ## B. Пустой файл
 ![](../../images/lab_4/test_B_csv.png)
@@ -107,8 +107,8 @@ if norm:
 ```
 python3 -m src.lab_4.text_report --in data/lab04/input_cp1251.txt --encoding cp1251 --out data/lab04/report_cp1251.csv
 ```
-**Вывод в консоль:**
-![](../../images/lab_4/test_C_console.png)
+**Вывод в консоль:**<br>
+![](../../images/lab_4/test_C_console.png)<br>
 
-**Вывод в report.csv:**
-![](../../images/lab_4/test_C_csv.png)
+**Вывод в report.csv:**<br>
+![](../../images/lab_4/test_C_csv.png)<br>
