@@ -54,7 +54,7 @@ write_csv([("word","count"),("test",3)], "data/check.csv")
 
 
 # Задание B — скрипт src/lab04/text_report.py
-Ввод данных
+**Ввод данных**
 ```
 parser = argparse.ArgumentParser()
 parser.add_argument("--in", dest="inp", default="data/lab04/input.txt")
@@ -62,7 +62,7 @@ parser.add_argument("--out", default="data/report.csv")
 parser.add_argument("--encoding", default="utf-8")
 args = parser.parse_args()
 ```
-###  Пример вызова:
+**Пример вызова:**
 ```
 python3 -m src.lab_4.text_report --in data/lab04/input.txt --out data/out.csv
 ```
@@ -91,24 +91,24 @@ if norm:
 ```
 # Тест-кейсы
 ## A. Один файл
-### Вход (data/lab04/input.txt):
+**Вход (data/lab04/input.txt):**
 ```
 Привет, мир! Привет!!! Привееееееееет!! Как дела?
 ```
-### Вывод в консоль:
+**Вывод в консоль:**
 ![](../../images/lab_4/test_A_console.png)
-### Вывод в report.csv:
+**Вывод в report.csv:**
 ![](../../images/lab_4/test_A_csv.png)
 
-## B Пустой файл
+## B. Пустой файл
 ![](../../images/lab_4/test_B_csv.png)
-## C Кодировка cp1251
-### Ввод: 
+## C. Кодировка cp1251
+**Ввод:**
 ```
 python3 -m src.lab_4.text_report --in data/lab04/input_cp1251.txt --encoding cp1251 --out data/lab04/report_cp1251.csv
 ```
-### Вывод в консоль:
+**Вывод в консоль:**
 ![](../../images/lab_4/test_C_console.png)
 
-### Вывод в report.csv:
+**Вывод в report.csv:**
 ![](../../images/lab_4/test_C_csv.png)
