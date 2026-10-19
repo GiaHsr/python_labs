@@ -1,3 +1,4 @@
+
 from src.lib.text import *
 
 text = open(0, encoding='utf-8').read()
@@ -23,3 +24,5 @@ else:
     for i in top_5:
         print(i[0], ": ", i[1], sep='')
 print()
+
+
