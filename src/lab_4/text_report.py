@@ -21,13 +21,14 @@ top = top_n(freq, n=len(freq))
 
 write_csv(top, args.out, header=("word", "count"))
 print()
-print("Всего слов:", len(tokens))
-print("Уникальных слов:", len(freq))
-print("Топ-5:")
-ans = 0
-for i, j in top:
-    print(i, ':', j, sep = '')
-    ans += 1
-    if ans == 5:
-        break
-print()
+if norm:
+    print("Всего слов:", len(tokens))
+    print("Уникальных слов:", len(freq))
+    print("Топ-5:")
+    ans = 0
+    for i, j in top:
+        print(i, ':', j, sep = '')
+        ans += 1
+        if ans == 5:
+            break
+    print()
