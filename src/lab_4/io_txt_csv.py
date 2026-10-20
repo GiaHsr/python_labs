@@ -1,6 +1,5 @@
 from pathlib import Path
 import csv
-from typing import Iterable, Sequence
 def read_text(path: str | Path, encoding: str = "utf-8") -> str:
 
     ''' Читает файл и возвращает его содержимое одной строкой
@@ -38,7 +37,3 @@ def write_csv(rows: list[tuple | list], path: str | Path, header: tuple[str, ...
             w.writerow(header)
         for i in rows:
             w.writerow(i)
-
-
-txt = read_text("data/lab04/input.txt")  # должен вернуть строку
-write_csv([("word","count"),("test",3)], "data/check.csv")

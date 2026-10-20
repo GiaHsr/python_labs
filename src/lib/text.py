@@ -1,4 +1,6 @@
 
+import re
+
 def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
 
     ''' Нормализует текст
@@ -33,18 +35,7 @@ def tokenize(text: str) -> list[str]:
             Массив слов
     '''
 
-    ans = []
-    word = ""
-    for i in range(len(text)):
-        if text[i].isalpha() or '0' <= text[i] <= '9' or (text[i] == '-' and i > 0 and i < len(text) - 1):
-            word += text[i]
-        elif len(word) != 0:
-            ans.append(word)
-            word = ""
-    if len(word) != 0:
-        ans.append(word)
-
-    return ans
+    return [match.group() for match in re.finditer(r'\w+(-\w+)*', text)]
 
 def count_freq(tokens: list[str]) -> dict[str, int]:
 
