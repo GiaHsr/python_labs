@@ -14,7 +14,7 @@ print("Уникальных слов:", len(countfreq))
 print("Топ-5:")
 if flag:
     print()
-    max_len = len(max(words + ["слово"], key=len))
+    max_len = max([len(w) for w, i in top_5] + [len("слово")])
     l = "слово" + ' '*(max_len - 5) + ' | ' + "частота"
     print(l)
     print('-'*len(l))
