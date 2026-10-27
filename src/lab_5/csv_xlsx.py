@@ -24,6 +24,12 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
         r = csv.reader(f)
         rows = list(r)
 
+    if not rows or not rows[0] or not any(rows[0]):
+        raise ValueError
+
+    if len(rows) < 2:
+        raise ValueError
+
     wb = Workbook()
     ws = wb.active
     ws.title = "Sheet1"

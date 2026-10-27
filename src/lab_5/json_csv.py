@@ -23,7 +23,10 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     with source.open("r", encoding="utf-8") as file:
         d = json.load(file)
 
-    if not d:
+    if not isinstance(d, list) or not d:
+        raise ValueError
+
+    if not all(isinstance(item, dict) for item in d):
         raise ValueError
     
     keys = []
