@@ -32,6 +32,8 @@ python3 -m src.lab06.cli_text stats --input data/samples/people.txt --top 4
 ```bash
 python3 -m src.lab06.cli_convert json2csv --in data/samples/people.json --out data/out/people_from_json.csv
 ```
+![](../../images/lab_6/json2csv.png)
+> Результат работы подкоманды json2csv
 
 
 ### 2.2 Подкоманда csv2json
