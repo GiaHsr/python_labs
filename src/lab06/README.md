@@ -71,3 +71,23 @@ python3 -m src.lab06.cli_convert csv2xlsx --in data/samples/people.csv --out dat
 ```
 ![](../../images/lab_6/csv2xlsx.png)
 > Результат работы подкоманды csv2xlsx
+
+## 3. --help
+Общая справка программ:
+```bash
+python3 -m src.lab06.cli_text --help
+```
+![](../../images/lab_6/cli_text_help.png)
+
+```bash
+python3 -m src.lab06.cli_convert --help
+```
+![](../../images/lab_6/cli_convert_help.png)
+Справка отдельных подкоманд:
+```bash
+python3 -m src.lab06.cli_text cat --help
+python3 -m src.lab06.cli_text stats --help
+python3 -m src.lab06.cli_convert json2csv --help
+python3 -m src.lab06.cli_convert csv2json --help
+python3 -m src.lab06.cli_convert csv2xlsx --help
+```

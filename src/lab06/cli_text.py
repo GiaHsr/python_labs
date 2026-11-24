@@ -4,6 +4,22 @@ from src.lib.text import normalize, tokenize, count_freq, top_n
 
 
 def main():
+
+    '''Выводит статистику по тексту или выводит содержимое файла
+
+    Args:
+        cat: Вывод содержимого
+            --input: Путь к файлу
+            -n: Нумерация строк
+        
+        stats: Вывод частот слов
+            --input: Путь к файлу 
+            -top: Количество отображаемых элементов в топе 
+    
+    Raises:
+            FileNotFoundError: Нет файла по указанному пути
+    '''
+
     print()
     parser = argparse.ArgumentParser(description="CLI для анализа и вывода текста")
 

@@ -4,6 +4,23 @@ from src.lab_5.csv_xlsx import csv_to_xlsx
 
 
 def main():
+
+    ''' Конвертирует CLI
+
+    Args:
+        json2csv: Переводит JSON в CSV
+            --in: Путь к входному JSON 
+            --out: Путь к выходному CSV
+
+        csv2json: Переводит CSV в JSON
+            --in: Путь к входному CSV
+            --out: Путь к выходному JSON
+
+        csv2xlsx: Переводит JSON в CSV
+            --in: Путь к входному CSV
+            --out: Путь к выходному XLSX
+    '''
+
     parser = argparse.ArgumentParser(description="Конвертеры данных")
     sub = parser.add_subparsers(dest="cmd")
 
